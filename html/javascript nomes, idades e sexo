@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        document.write
+        document.write("<font color='black' size='6'>")
+        $nome = prompt ("Qual seu nome?")
+        document.write ("O nome digitado foi: " + $nome)
+        $sexo = prompt ("Qual é o seu sexo? [M] ou [F]")
+        $idade = prompt ("Quantos anos você tem?")
+        if ($sexo == "m" || $sexo == "M")
+          if ($idade < 18) 
+          {
+            document.writeln("Você ainda é um menino!")
+          }
+          else 
+        {
+            document.writeln("Você já um homem!")
+        }
+        else
+        {
+            if ($sexo == "f" || "F")
+              if ($idade < 18)
+              {
+                document.writeln("Você ainda é uma menina!")
+              }
+              else
+              {
+                document.writeln("Você já é uma mulher!")
+              }
+        } 
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
