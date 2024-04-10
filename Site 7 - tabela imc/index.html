@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        document.write("<center>")
+        document.write("<h1 color='#1E90FF' size='4'>TABELA - IMC<h1>")
+
+        $nome = prompt("Qual o seu nome?")
+        document.write("<br>")
+        $peso = prompt("digite seu peso em kg")
+        $altura = prompt("digite sua altura em metros")
+        $imc = $peso / ($altura * $altura)
+        $foto_escolhida = ""
+        $classificacao=""
+
+
+
+        if ($imc < 18.5) {
+
+            $foto_escolhida = "<img src='./img/magro.jpg' width='40%'>"
+            $classificacao = "Abaixo do peso"
+
+
+        }
+
+        else if ($imc < 25) 
+        {
+
+            $foto_escolhida = "<img src='./img/ideal.jpg' width='40%'>"
+            $classificacao = "Ideal"
+        }   
+        
+        else if ($imc < 30) 
+        {
+
+            $foto_escolhida = "<img src='./img/sobrepeso.jpg' width='40%'>"
+            $classificacao = "Sobrepeso"
+        }
+ 
+        else
+        {
+
+            $foto_escolhida = "<img src='./img/obesidade.jpg' width='40%'>"
+            $classificacao = "Obesidade"
+                        
+        }
+
+        document.write("<table>")
+        document.write("<tr bgcolor='#1E90FF'>")
+        document.write("<td align='center'><b>NOME</b></td>")
+        document.write("<td align='center'><b>PESO</b></td>")
+        document.write("<td align='center'><b>ALTURA</b></td>")
+        document.write("<td align='center'><b>IMC</b></td>")
+        document.write("<td align='center'><b>CLASSIFICAÇÃO</b></td>")
+        document.write("<td align='center'><b>FOTO</b></td>")
+        document.write("</tr>")
+        document.write("<tr>")
+        document.write("<td align='center'><b>" + $nome + "</b></td>")
+        document.write("<td align='center'><b>" + $peso + "</b></td>")
+        document.write("<td align='center'><b>" + $altura + "</b></td>")
+        document.write("<td align='center'><b>" + $imc + "</b></td>")
+        document.write("<td align='center'><b>" + $classificacao + "</b></td>")
+        document.write("<td align='center'><b>" + $foto_escolhida + "</b></td>")
+        
+        document.write("</center>")
+
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
